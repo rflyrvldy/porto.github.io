@@ -1,0 +1,586 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #18181B;
+}
+
+nav{
+    display: flex;
+    background-color: #ffffff02;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo{
+    font-size: 20px;
+    color: #fff;
+    cursor: default;
+    margin-left: 50px;
+}
+
+.logo span{
+    color: rgb(233, 9, 80);
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: rgb(255, 255, 255);
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(233, 9, 80);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+
+
+.btn{
+    margin-right: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    border: transparent;
+    background-color: rgb(233, 9, 80);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: rgb(194, 3, 63);
+    border: transparent;
+}
+
+header .btn{
+    padding: 10px 40px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px rgb(233, 9, 80);
+    z-index: -100;
+}
+
+.icon{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.icon svg{
+    fill: #fff;
+    height: 25px;
+}
+
+.icon svg:hover{
+    fill: rgb(233, 9, 80);
+    height: 25px;
+}
+
+
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.conten{
+    margin-top: 3rem;
+}
+
+.conten h4 span{
+    color: rgb(233, 9, 80);
+}
+
+.conten h4{
+    color: #fff;
+    font-size: 20px
+}
+
+.conten h1{
+    color: #fff;
+    font-size: 45px;
+    padding-bottom: 8px;
+}
+
+.conten h1 span{
+    color:rgb(233, 9, 80);
+    font-size: 45px
+}
+
+.conten p{
+    color: #fff;
+    font-size: 15px;
+}
+
+.fto img{
+    margin-top: 3rem;
+    height: 450px;
+    margin-left: 10rem;
+    box-shadow: 0 0 40px 5px rgb(233, 9, 80);
+    border: 3px solid rgb(233, 9, 80);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 5rem 8rem;
+}
+
+
+section .header{
+    margin-top: 5rem;
+}
+
+section .header h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2px;
+}
+
+section .header h4 span{
+    color: rgb(233, 9, 80);
+    text-align: center;
+}
+
+section .header h4{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+
+.ii{
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.ii p{
+    color: white;
+    margin-top: 20px;
+}
+
+.kp{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color:rgba(0, 0, 0, 0.486);
+    border-radius: 5%;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    border: 1px solid rgb(233, 9, 80);
+}
+
+.card1{
+    background-color:rgba(0, 0, 0, 0.486);
+    border-radius: 5%;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    border: 1px solid rgb(233, 9, 80);
+}
+
+
+.html img,.html1 img{
+    height: 150px;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+.css img,.css1 img{
+    height: 120px;
+    align-items: center;
+    padding: 35px 20px;
+}
+
+.js img,.js1 img{
+    height: 150px;
+    align-items: center;
+    padding: 20px;
+}
+
+.php img,.php1 img{
+    height: 80px;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.java img,.java1 img{
+    height: 190px;
+    align-items: center;
+}
+
+.py img,.py1 img{
+    height: 150px;
+    align-items: center;
+    padding: 25px;
+}
+
+.project{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.car,.car1{
+    background-color:rgba(0, 0, 0, 0.091);
+    height: 400px;
+    width: 400px;
+    gap: 1rem;
+    margin: 1rem;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    border: 1px solid rgb(233, 9, 80);
+}
+
+
+.car div img,.car1 div img{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 13px;
+}
+
+.car h5,.car1 h5{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.car p,.car1 p{
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 350px;
+    color: #ffffff6f;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.car button,.car1 button{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    
+}
+
+.footer{
+    background-color: #0000004e;
+}
+.foot{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icn{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.in{
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.in:hover{
+    background-color: rgb(233, 9, 80);
+}
+
+.in svg{
+    margin-top: 8px;
+}
+
+
+.idi ul{
+    margin-top:1.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.idi ul li a{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.idi p{
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.189);
+}
+
+h4,h1,p,h2,h5{
+    cursor: default;
+}
+
+@media only screen and (max-width:720px){
+    nav{
+        padding: 10px;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    .logo{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .btn{
+        margin-right: 20px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .conten{
+        margin-top: 20rem;
+    }
+
+    .fto img{
+        margin-top: 6rem;
+        position: absolute;
+        top: 0;
+        right: 90px;
+        height: 200px;
+    }
+
+    .container{
+        max-width: 720px;
+        margin: auto;
+    }
+
+    .ii p{
+        font-size: 10px;
+    }
+
+    .kp{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+    
+.html img{
+    height: 85px;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.css img{
+    padding: 13px 5px;
+    height: 75px;
+    align-items: center;
+}
+
+.js img{
+    padding: 5px 5px;
+    height: 95px;
+    align-items: center;
+}
+
+.php img{
+    padding: 25px 8px;
+    height: 45px;
+    align-items: center;
+}
+
+.java img{
+    height: 110px;
+    align-items: center;
+}
+
+.py img{
+    height: 90px;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.html1 img,.css1 img,.js1 img,.php1 img,.java1 img,.py1 img, .card1,.car1{
+    display: none;
+}
+
+.header .ol{
+    font-size: 18px;
+}
+
+.project{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    max-width: 720px;
+    align-items: center;
+}
+
+
+.car{
+    margin: auto;
+    margin-top: 1rem;
+    align-items: center;
+    height: 360px;
+    width: 300px;
+}
+
+.car div img{
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.car h5{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.car p{
+    font-style: italic;
+    margin-top: 10px;
+    max-width: 350px;
+    color: #ffffff6f;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.car button{
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 40px;
+    
+}
+
+.icn{
+    gap: 1rem;
+}
+
+.idi ul{
+    gap:1.5rem;
+}
+
+.idi p{
+    font-size: 13px;
+}
+
+
+}
